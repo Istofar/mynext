@@ -27,8 +27,8 @@ export default function Home() {
           <h2>Events In London</h2>
           <p>
             What is London? London is the capital city of the United Kingdom. It
-            is the U.K.'s largest metropolis and its economic, transportation,
-            and cultural centre. London is also among the oldest of the world's
+            is the U.K.&apos;s largest metropolis and its economic, transportation,
+            and cultural centre. London is also among the oldest of the world&apos;s
             great cities, with its history spanning nearly two millennia.
           </p>
         </a>
@@ -47,7 +47,7 @@ export default function Home() {
           <p>
             Japan is an archipelago, or string of islands, on the eastern edge
             of Asia. There are four main islands: Hokkaido, Honshu, Shikoku, and
-            Kyushu. There are also nearly 4,000 smaller islands! Japan's nearest
+            Kyushu. There are also nearly 4,000 smaller islands! Japan&apos;s nearest
             mainland neighbors are the Siberian region of Russia in the north
             and Korea and China farther south.
           </p>
