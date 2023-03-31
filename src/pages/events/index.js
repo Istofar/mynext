@@ -1,21 +1,22 @@
-const Page = () => {
+import Link from "next/link";
+const EventsPage = () => {
   return (
     <div>
       <h1>Events Page</h1>
       <div>
         {" "}
-        <a href="">
+        <Link href="">
           <h2>Events In London</h2>
-        </a>
-        <a href="">
+        </Link>
+        <Link href="">
           <h2>Events In Paris</h2>
-        </a>
-        <a href="">
+        </Link>
+        <Link href="">
           <h2>Events In Japan</h2>
-        </a>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default Page;
+export default EventsPage;

@@ -2,10 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -16,23 +17,31 @@ export default function Home() {
       </Head>
       <header>
         <nav>
-          <img src="" alt="" />
+          <Image src="" alt="" />
           <a href=""> Home</a>
           <a href="./events"> Events</a>
           <a href="./about-us"> About Us</a>
         </nav>
       </header>
       <main className={styles.main}>
-        <a href="">
+        {data.map((ev) => (
+          <Link key={ev.id} href={`/events/${ev.id}`}>
+            <Image width={200} height={100} src={ev.image} alt={ev.title} />
+            <h2>{ev.title}</h2>
+            <p>{ev.description}</p>
+          </Link>
+        ))}
+        <Link href="/events/london">
           <h2>Events In London</h2>
           <p>
             What is London? London is the capital city of the United Kingdom. It
-            is the U.K.&apos;s largest metropolis and its economic, transportation,
-            and cultural centre. London is also among the oldest of the world&apos;s
-            great cities, with its history spanning nearly two millennia.
+            is the U.K.&apos;s largest metropolis and its economic,
+            transportation, and cultural centre. London is also among the oldest
+            of the world&apos;s great cities, with its history spanning nearly
+            two millennia.
           </p>
-        </a>
-        <a href="">
+        </Link>
+        <Link href="/events/paris">
           <h2>Events In Paris</h2>
           <p>
             Paris is one of the most beautiful cities in the world. It is known
@@ -41,17 +50,17 @@ export default function Home() {
             city. The city is also known for its high-quality gastronomy and the
             terraces of its cafés.
           </p>
-        </a>
-        <a href="">
+        </Link>
+        <Link href="/events/japan">
           <h2>Events In Japan</h2>
           <p>
             Japan is an archipelago, or string of islands, on the eastern edge
             of Asia. There are four main islands: Hokkaido, Honshu, Shikoku, and
-            Kyushu. There are also nearly 4,000 smaller islands! Japan&apos;s nearest
-            mainland neighbors are the Siberian region of Russia in the north
-            and Korea and China farther south.
+            Kyushu. There are also nearly 4,000 smaller islands! Japan&apos;s
+            nearest mainland neighbors are the Siberian region of Russia in the
+            north and Korea and China farther south.
           </p>
-        </a>
+        </Link>
       </main>
       <footer className={styles.footer}>
         <p>
@@ -61,4 +70,11 @@ export default function Home() {
       </footer>
     </>
   );
+}
+export async function getServerSideProps() {
+  const { events_categories } = await import("/data/data.json");
+  console.log(events_categories);
+  return {
+    props: { data: events_categories },
+  };
 }
