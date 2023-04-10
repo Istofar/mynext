@@ -31,36 +31,6 @@ export default function Home({ data }) {
             <p>{ev.description}</p>
           </Link>
         ))}
-        <Link href="/events/london">
-          <h2>Events In London</h2>
-          <p>
-            What is London? London is the capital city of the United Kingdom. It
-            is the U.K.&apos;s largest metropolis and its economic,
-            transportation, and cultural centre. London is also among the oldest
-            of the world&apos;s great cities, with its history spanning nearly
-            two millennia.
-          </p>
-        </Link>
-        <Link href="/events/paris">
-          <h2>Events In Paris</h2>
-          <p>
-            Paris is one of the most beautiful cities in the world. It is known
-            worldwide for the Louvre Museum, Notre-Dame cathedral, and the
-            Eiffel tower. It has a reputation of being a romantic and cultural
-            city. The city is also known for its high-quality gastronomy and the
-            terraces of its cafés.
-          </p>
-        </Link>
-        <Link href="/events/japan">
-          <h2>Events In Japan</h2>
-          <p>
-            Japan is an archipelago, or string of islands, on the eastern edge
-            of Asia. There are four main islands: Hokkaido, Honshu, Shikoku, and
-            Kyushu. There are also nearly 4,000 smaller islands! Japan&apos;s
-            nearest mainland neighbors are the Siberian region of Russia in the
-            north and Korea and China farther south.
-          </p>
-        </Link>
       </main>
       <footer className={styles.footer}>
         <p>
@@ -73,7 +43,6 @@ export default function Home({ data }) {
 }
 export async function getServerSideProps() {
   const { events_categories } = await import("/data/data.json");
-  console.log(events_categories);
   return {
     props: { data: events_categories },
   };

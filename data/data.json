@@ -3,19 +3,19 @@
     {
       "id": "london",
       "title": "Events in London",
-      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+      "description": "What is London? London is the capital city of the United Kingdom. It is the United States, largest metropolis and its economic transportation and cultural centre, London is also among the oldest of the world's great cities, with its history spanning nearly two millennia.",
       "image": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     },
     {
       "id": "paris",
       "title": "Events in Paris",
-      "description": "corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.",
+      "description": "Paris is one of the most beautiful cities in the world. It is known worldwide for the Louvre Museum, Notre-Dame cathedral, and the Eiffel tower. It has a reputation of being a romantic and culturalcity. The city is also known for its high-quality gastronomy and the terraces of its cafés.",
       "image": "https://images.pexels.com/photos/2574634/pexels-photo-2574634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "japan",
       "title": "Events in Japan",
-      "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+      "description": "Japan is an archipelago, or string of islands, on the eastern edgeof Asia. There are four main islands: Hokkaido, Honshu, Shikoku, and Kyushu. There are also nearly 4,000 smaller islands! Japan's nearest mainland neighbors are the Siberian region of Russia in the north and Korea and China farther south.",
       "image": "https://images.pexels.com/photos/1319839/pexels-photo-1319839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ],
